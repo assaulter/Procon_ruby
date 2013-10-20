@@ -29,4 +29,12 @@ describe Carmichael do
 
   end
 
+  describe 'carmichael' do
+    context '561の場合' do
+      it 'trueを返す' do
+        actual = Carmichael.carmichael(num: 561)
+      end
+    end
+  end
+
 end  
