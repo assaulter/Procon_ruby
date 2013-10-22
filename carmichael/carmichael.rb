@@ -11,8 +11,8 @@ class Carmichael
       # numに対して割り切れる素数のリストを用意する
       composite_num_list = composite_numbers(prime_list: prime_list, num: num, composite_num_list: [])
       # 素数リストに対して、カーマイケル数かどうかの判定式を適用する
-      composite_num_list.each do |num|
-        
+      composite_num_list.each do |prime|
+        return false unless (num -1) % (prime-1) == 0
       end
     end
 

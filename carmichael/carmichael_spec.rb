@@ -33,6 +33,24 @@ describe Carmichael do
     context '561の場合' do
       it 'trueを返す' do
         actual = Carmichael.carmichael(num: 561)
+
+        expect(actual).to be_true
+      end
+    end
+
+    context '562の場合' do
+      it 'falseを返す' do
+        actual = Carmichael.carmichael(num: 562)
+
+        expect(actual).to be_false
+      end
+    end
+
+    context '8911の場合' do
+      it 'trueを返す' do
+        actual = Carmichael.carmichael(num: 8911)
+
+        expect(actual).to be_true
       end
     end
   end
