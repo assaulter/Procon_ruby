@@ -14,6 +14,8 @@ class Carmichael
       composite_num_list.each do |prime|
         return false unless (num -1) % (prime-1) == 0
       end
+
+      return true
     end
 
     # 合成数を返す
