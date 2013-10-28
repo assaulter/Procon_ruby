@@ -53,5 +53,12 @@ describe Eratos do
 
       expect(actual).to eq expected
     end
+
+    # it '22801787297 から 22901763489 の場合は1000個' do
+    #   expected = 1000
+    #   actual = Eratos.eratos_by_range(from: 22801787297, to: 22901763489)
+
+    #   expect(actual).to eq expected
+    # end
   end
 end

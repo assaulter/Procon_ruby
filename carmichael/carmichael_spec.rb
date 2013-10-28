@@ -53,6 +53,14 @@ describe Carmichael do
         expect(actual).to be_true
       end
     end
+
+    context '41042' do
+      it 'trueを返す' do
+        actual = Carmichael.carmichael(num: 41041)
+
+        expect(actual).to be_true
+      end
+    end
   end
 
 end  
