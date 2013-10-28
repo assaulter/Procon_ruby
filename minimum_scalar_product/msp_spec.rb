@@ -1,6 +1,6 @@
 require './msp.rb'
 
-describe MinimumScalarProduct
+describe MinimumScalarProduct do
 
   describe 'msp' do
     context 'v1=[1,3,-5], v2=[4,1,-2]' do
@@ -15,4 +15,5 @@ describe MinimumScalarProduct
       end
     end
   end
+
 end
