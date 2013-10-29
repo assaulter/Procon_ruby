@@ -26,4 +26,16 @@ describe CrazyRows do
     end
   end
 
+  describe 'bubble' do
+    context '[2,0,1]が与えられた場合' do
+      it '2' do
+        list = [2,0,1]
+        expected = 2
+        actual = CrazyRows.bubble(list: list)
+
+        expect(actual).to eq expected
+      end
+    end
+  end
+
 end

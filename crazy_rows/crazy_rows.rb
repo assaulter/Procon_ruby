@@ -7,23 +7,22 @@ class CrazyRows
       # バブルソートを行い、入れ替え回数をカウントする
       count = 0
 
-      list.each_with_index {|elem, i|
-        (0..(list.length - i)).each_with_index {|num, index|
-          list[index], list[index+1] = list[index+1], list[index] if list[index] > list[index+1]
-        }
-      }
-
       list
     end
 
     def bubble(list: list)
-      list.each_with_index {|elem, i|
-        (0..(list.length - i)).each_with_index {|num, index|
-          list[index], list[index+1] = list[index+1], list[index] if list[index] > list[index+1]
+      count = 0
+
+      (0...list.length-1).each { |i|
+        (0...list.length-1-i).each{ |j|
+          if (list[j] > list[j+1])
+            list[j], list[j+1] = list[j+1], list[j]
+            count += 1
+          end
         }
       }
 
-      list      
+      count
     end
 
     # private
