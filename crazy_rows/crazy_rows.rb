@@ -8,6 +8,8 @@ class CrazyRows
       bubble(list: lastone_list)
     end
 
+    # private
+
     def bubble(list: list)
       count = 0
 
@@ -22,8 +24,6 @@ class CrazyRows
 
       count
     end
-
-    # private
 
     def index_list(list: list)
       index_list = Array.new
