@@ -38,4 +38,16 @@ describe CrazyRows do
     end
   end
 
+  describe 'cr' do
+    context '[[1,1,1,0],[1,1,0,0],[1,1,0,0],[1,0,0,0]]が与えられた場合' do
+      it 'return 4' do
+        list = [[1,1,1,0],[1,1,0,0],[1,1,0,0],[1,0,0,0]]
+        expected = 4
+        actual = CrazyRows.cr(list: list)
+
+        expect(actual).to eq expected
+      end
+    end
+  end
+
 end
