@@ -5,9 +5,7 @@ class CrazyRows
       # 配列の最後に出現する１のインデックスのリストを作成
       lastone_list = index_list(list: list)
       # バブルソートを行い、入れ替え回数をカウントする
-      count = 0
-
-      list
+      bubble(list: lastone_list)
     end
 
     def bubble(list: list)
